@@ -53,9 +53,9 @@ class banco:
         saldomaximo = 0.0
         for i in lista:
             if lista[i].cuenta == cuenta:
-                if lista[i].tipo in "d":
+                if lista[i].tipo in "a":
                     saldomaximo += lista[i].saldo
-                if lista[i].tipo == "r":
+                if lista[i].tipo == "b":
                     saldomaximo -= lista[i].saldo
         return saldomaximo
 
@@ -64,7 +64,7 @@ class banco:
         depositos = 0.0
         n = 0
         for i in lista:
-            if lista[i].tipo in "d" and lista[i].fecha >= inf and lista[i].fecha <= sup:
+            if lista[i].tipo in "a" and lista[i].fecha >= inf and lista[i].fecha <= sup:
                 n += 1
                 depositos += lista[i].saldo
         return "Numero de depositos: " + n + "\nCantidad depositada: " + depositos
@@ -74,7 +74,7 @@ class banco:
         retiros = 0.0
         n = 0
         for i in lista:
-            if lista[i].tipo in "r" and lista[i].fecha >= inf and lista[i].fecha <= sup:
+            if lista[i].tipo in "b" and lista[i].fecha >= inf and lista[i].fecha <= sup:
                 n += 1
                 retiros -= lista[i].saldo
         return "Numero de retiros: ",n,"\nCantidad retirada: ",retiros
