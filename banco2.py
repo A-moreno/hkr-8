@@ -2,7 +2,7 @@ import Stack
 class banco:
     
 
-    def __init__(self, id, cuenta, fecha, saldo, tipo):
+    def __init__(self, id, cuenta, fecha, saldo):
         self.id = id
         self.cuenta = cuenta
         self. fecha = fecha
