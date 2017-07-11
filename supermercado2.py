@@ -43,7 +43,7 @@ class Productos1:
     def agregarProductos1(self,precio,fecha):
         self.ListaProductos.push(Productos(precio,fecha))
 
-    def actualizar(self,precionuevo,fechanueva,id):
+    def actualizarproducto(self,precionuevo,fechanueva,id):
         for i in range(self.ListaProductos.size):
             Producto2 = self.ListaProductos.pop()
             if Producto2.CodigodeProducto = id:
@@ -52,7 +52,7 @@ class Productos1:
             else:
                 self.ListaProductos.puch(Producto2)
     def MaximoRemarcados(self,n):
-        for i in range(self.ListaProducts.size):
+        for i in range(self.ListaProductos.size):
             Producto2 = self.ListaProductos.pop()
             Cam = len(Producto2.cambios[1])
             if  Cam >= n:
