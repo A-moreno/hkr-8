@@ -51,12 +51,12 @@ class Productos1:
                 self.ListaProductos.push(Producto2)
             else:
                 self.ListaProductos.puch(Producto2)
-    def MaxRemarcados(self,n):
+    def MaximoRemarcados(self,n):
         for i in range(self.ListaProducts.size):
             Producto2 = self.ListaProductos.pop()
             Cam = len(Producto2.cambios[1])
             if  Cam >= n:
-                self.MaxRe.push(Producto2)
+                self.MaxRemarcados.push(Producto2)
                 self.ListaProductos.push(Producto2)
             else:
                 self.ListaProductos.push(Producto2)
